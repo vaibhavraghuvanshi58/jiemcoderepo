@@ -16,32 +16,41 @@ public class A {
 	{
 		System.out.println("instance block of A");	
 	}
+	
 	public static void main(String[] args) {
 		Human.walk("XYZ");
 		
+	new Human();
+	Human h1 = new Human();
+	h1.talk("Hey Guys");
+	
+	
+	System.gc(); // when we want to run garbage collection manually
+	
+	Human h2 = new Human();
+	Human h3 = new Human();
 
-//	Human h1 = new Human();
-//	h1.name = "Ankit";
-//	h1.talk("Hey Guys");
-//	Human.walk(h1.name);
+	h1.name = "Ankit";
+	h1.talk("Hey Guys");
+	Human.walk(h1.name);
 		
 		/*
 		 * this is multiline
 		 */
 		
 		
-		Human h2 = new Human();
 		h2.name = "pooja";
 		
 		
 		h2.talk(" Hello there");
 		Human.walk(h2.name);
 		
-		Human h3 = new Human();
 		h3.name = "Deepak";
 		h3.talk(" Good morning!");
 		h2.talk("Come for ludo..");
 		Human.walk(h3.name);
+		
+		
 		
 		
 	}
