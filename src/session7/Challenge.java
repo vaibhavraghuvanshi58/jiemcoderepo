@@ -2,6 +2,13 @@ package session7;
 
 public class Challenge {
 	public static void main(String[] args) {
+		Task t1 = Task.createInstance();
+		t1.taskMethod();
+		
+		int h = t1.sum(10, 20);
+		System.out.println(h);
+		
+		Task.t1.taskMethod();
 		
 	}
 }
@@ -14,6 +21,10 @@ public class Challenge {
 
 class Task{
 	
+	int i = 10;
+	static Task t1 = new Task();
+	
+	
 	// Constructor is private
 	private Task(){
 		
@@ -21,6 +32,16 @@ class Task{
 	
 	public void taskMethod() {
 		System.out.println("Hello");
+	}
+	
+	public static Task createInstance() {
+		Task t = new Task();
+		return t;
+	}
+	
+	public int sum(int i, int j) {
+		int k = i+j;
+		return k;
 	}
 	
 }
