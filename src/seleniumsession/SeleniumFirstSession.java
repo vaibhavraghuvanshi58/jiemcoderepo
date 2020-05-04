@@ -42,7 +42,7 @@ public class SeleniumFirstSession extends BaseBrowser{
 		}
 		
 		
-//		driver.quit();
+		driver.quit();
 		
 	
 	}
