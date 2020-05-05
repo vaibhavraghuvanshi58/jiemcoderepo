@@ -7,9 +7,19 @@ import frm.driverfactory.DriverFactory;
 
 public class SearchFormPage {
 	
-	public static By txt_searchbox =  By.name("q");
+	
+	public static String parentDiv = "//div[@id='nav-yshop']";
+	public static By lnk1 = By.xpath(parentDiv+"/a[text()='Best Sellers']");
+	public static By lnk2 = By.xpath(parentDiv+"/a[text()='Best Sellers']");
+	public static By lnk3 = By.xpath(parentDiv+"/a[text()='Best Sellers']");
+	public static By lnk4 = By.xpath(parentDiv+"/a[text()='Best Sellers']");
+	public static By lnk5 = By.xpath(parentDiv+"/a[text()='Best Sellers']");
+	
+	public static By txt_searchbox =  By.xpath("//*[@name='q']"); 
 	public static By btn_googleSearch = By.name("btnK");
 	public static By lnk_Gmail = By.linkText("Gmail");
+	
+	
 	
 	
 	static WebDriver driver ;
