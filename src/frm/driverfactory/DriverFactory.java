@@ -42,6 +42,7 @@ public class DriverFactory {
 	}
 
 	private static void getChromeDriver() {
+		
 		System.setProperty("webdriver.chrome.driver", ApplicationConstant.CHROME_DRIVER_PATH);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
