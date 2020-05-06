@@ -3,10 +3,8 @@ package exceptionhandling;
 public class ExceptionHandlingDemo {
 	public static void main(String[] args) {
 		devide(10,0);
-		
 		System.out.println("hello");
 	} 
-
 
 	public static void devide(int i , int j) {
 		DBConnection b = new DBConnection();
@@ -19,8 +17,6 @@ public class ExceptionHandlingDemo {
 		}finally {
 			b.closeConnection();
 		}
-		
-		
 	}
 
 
