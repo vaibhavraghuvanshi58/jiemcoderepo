@@ -12,7 +12,7 @@ public class OwnExceptionDemo {
 }
 
 class Demo1{
-	public void checkTime(int time)throws WontBeAvailablePost7Exception {
+	public void checkTime(int time) {
 		
 			if(time > 7) {
 				throw new WontBeAvailablePost7Exception("beacuse time is " + time);
@@ -23,8 +23,16 @@ class Demo1{
 	}
 }
 
-class WontBeAvailablePost7Exception extends Throwable{
+class WontBeAvailablePost7Exception extends RuntimeException{
+	String msg;
 	WontBeAvailablePost7Exception(String msg){
-		System.out.println(msg);
+		this.msg = msg;
 	}
+
+	@Override
+	public String getMessage() {
+		return this.msg;
+	}
+	
+	
 }
