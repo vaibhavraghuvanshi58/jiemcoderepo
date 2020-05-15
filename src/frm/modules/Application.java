@@ -12,7 +12,7 @@ public class Application {
 		// Application Open
 		DriverFactory.getWebDriver(ApplicationConstant.browsername);
 		driver = DriverFactory.driver;
-		driver.get(ApplicationConstant.ApplicationURL);
+		//driver.get(ApplicationConstant.ApplicationURL);
 		System.out.println("Browser has been open with title : " + driver.getTitle());
 	}
 	
