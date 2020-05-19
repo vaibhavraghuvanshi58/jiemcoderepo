@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jiem Project Automation Suite" parallel="tests" thread-count="5">
+	<parameter name="browser" value="chrome" />
+	 <listeners>
+	 	<listener class-name="sanity.TestListenerPlugin"></listener>
+	</listeners>
+	<test name="test1 - as BUG2012">
+		<classes>
+			<class name="regression.Test1" />
+		</classes>
+	</test>
+	<test name="test1 - as BUG2013">
+		<classes>
+			<class name="regression.Test2" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
